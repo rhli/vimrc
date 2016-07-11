@@ -35,9 +35,7 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-"colorscheme peaksea
-let g:solarized_termtrans=1
-colorscheme solarized 
+colorscheme peaksea
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -102,7 +100,6 @@ inoremap $3 {}<esc>i
 inoremap $4 {<esc>o}<esc>O
 inoremap $q ''<esc>i
 inoremap $e ""<esc>i
-inoremap $t <><esc>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -114,7 +111,7 @@ iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 
 

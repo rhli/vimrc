@@ -152,6 +152,12 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
+" added by RHLI begins
+" Cpp
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
+" added by RHLI ends
+
 " Custom CoffeeScript SyntasticCheck
 func! SyntasticCheckCoffeescript()
     let l:filename = substitute(expand("%:p"), '\(\w\+\)\.coffee', '.coffee.\1.js', '')
@@ -159,7 +165,7 @@ func! SyntasticCheckCoffeescript()
     execute "SyntasticCheck"
     execute "Errors"
 endfunc
-nnoremap <silent> <leader>l :call SyntasticCheckCoffeescript()<cr>
+nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

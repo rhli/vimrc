@@ -54,12 +54,3 @@ endfunction
 au FileType coffee call CoffeeScriptFold()
 
 au FileType gitcommit call setpos('.', [0, 1, 1, 0])
-
-"""""""""""""""""""""
-" latex section
-"""""""""""""""""""""
-au FileType tex set tw=79
-au FileType tex imap <leader>G \begin{figure}<ENTER>\includegraphics[width=]{}<ENTER>\end{figure}<esc>k$hhi
-au FileType tex imap <leader>I \begin{itemize}<ENTER>\item<ENTER>\end{itemize}<esc>k$a
-
-

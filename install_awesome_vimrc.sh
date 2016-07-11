@@ -10,8 +10,6 @@ source ~/.vim_runtime/vimrcs/extended.vim
 try
 source ~/.vim_runtime/my_configs.vim
 catch
-endtry
-
-colorscheme peaksea' > ~/.vimrc
+endtry' > ~/.vimrc
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
